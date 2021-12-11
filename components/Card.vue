@@ -42,14 +42,30 @@ export default {};
 .image {
   width: 27.5rem;
   border-radius: 10px;
+  object-fit: cover;
 }
 footer {
   font-size: 12px;
   opacity: .7;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .Hero {
-    height: auto;
+    height: 100%;
+    flex-direction: column-reverse;
+    margin: 20px 0;
+  }
+  .text-wrapper {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .text-wrapper {
+    padding: 0;
   }
 }
 </style>

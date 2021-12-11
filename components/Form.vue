@@ -19,7 +19,7 @@
         alt="right-side-image"
         class="image"
       />
-      <p class="social">Google</p>
+      <div class="social">Google</div>
     </div>
     <div class="image-wrapper">
       <img
@@ -27,7 +27,7 @@
         alt="right-side-image"
         class="image"
       />
-      <p class="social">Facebook</p>
+      <div class="social">Facebook</div>
     </div>
   </form>
 </template>
@@ -104,8 +104,19 @@ hr {
 }
 .social {
   font-size: 12px;
-  padding-left: 3px;
+  padding-left: 4px;
   text-align: center;
   font-weight: 500;
+}
+@media (max-width: 1024px) {
+  form {
+    width: 100%;
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 768px) {
+  form {
+    margin: 0;
+  }
 }
 </style>

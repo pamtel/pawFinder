@@ -29,6 +29,12 @@ html {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .wrapper {
+    background-color: #fff;
+    height: 100%;
+  }
+}
 .button--green {
   display: inline-block;
   border-radius: 4px;
