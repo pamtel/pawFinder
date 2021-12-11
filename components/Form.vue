@@ -5,7 +5,14 @@
       <p class="daftar">Daftar</p>
     </div>
     <input type="text" placeholder="Nomor Ponsel atau Email" />
-    <input type="text" placeholder="Kata Sandi" />
+    <div class="input-container">
+      <input type="text" placeholder="Kata Sandi" />
+      <img
+        src="~assets/images/eyeOff.png"
+        alt="right-side-image"
+        class="input-icon"
+        />
+    </div>
     <button class="button btn">Masuk</button>
     <p><sub>Lupa kata sandi?</sub> <sub class="sub-text">Klik disini</sub></p>
     <div class="sub-header">
@@ -50,6 +57,10 @@ input {
   font-size: 10px;
   border-radius: 5px;
   border: 1px solid #d0d0d0;
+}
+.input-icon {
+  position: absolute;
+  margin: 10px -25px 0 ;
 }
 .masuk {
   font-weight: 500;
