@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Nuxt />
   </div>
 </template>
@@ -21,7 +21,13 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+.wrapper {
   background-color: #e5e5e5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .button--green {
   display: inline-block;

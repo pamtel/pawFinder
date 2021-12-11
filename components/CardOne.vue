@@ -2,7 +2,8 @@
   <div class="Hero">
     <div class="text-wrapper">
       <p class="header">Travling!</p>
-      <!-- <button class="button btn">Start Looking</button> -->
+      <Form />
+      <footer>&copy; 2021 Travling. All Rights Reserved</footer>
     </div>
     <img
       src="~assets/images/SideRight.png"
@@ -22,40 +23,29 @@ export default {};
   max-width: 1200px;
   overflow: hidden;
   position: relative;
-  margin: 20px 0;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffff;
   border-radius: 10px;
+  background-color: #fff;
 }
 .text-wrapper {
   width: 50%;
-  background-color: #ffff;
   padding: 0 20px;
 }
 .header {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
-  background-color: #ffff;
   color: #42a7c3;
 }
 .image {
   width: 27.5rem;
   border-radius: 10px;
 }
-.button {
-  padding: 1rem 4rem;
-  border-radius: 100rem;
-  background-color: rgb(231, 81, 43);
-  color: white;
-  width: 20rem;
-  font-weight: 700;
-  transition: 0.5s;
-}
-.button:hover {
-  width: 21.5rem;
+footer {
+  font-size: 12px;
+  opacity: .7;
 }
 @media (max-width: 768px) {
   .Hero {
