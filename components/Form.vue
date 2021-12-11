@@ -39,7 +39,7 @@ export default {};
 <style scoped>
 form {
   width: 70%;
-  margin: 40px 5rem;
+  margin: 5px 5rem;
   padding: 2rem;
 }
 input {

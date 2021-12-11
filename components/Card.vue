@@ -19,11 +19,12 @@ export default {};
 
 <style scoped>
 .Hero {
-  max-height: 100vh;
+  max-height: 550px;
+  height: 100vh;
   max-width: 1200px;
   overflow: hidden;
   position: relative;
-  padding: 20px;
+  padding: 100px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +33,7 @@ export default {};
 }
 .text-wrapper {
   width: 50%;
-  padding: 0 20px;
+  padding: 20px;
 }
 .header {
   font-weight: 700;
@@ -41,6 +42,7 @@ export default {};
 }
 .image {
   width: 27.5rem;
+  height: 510px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -51,6 +53,7 @@ footer {
 @media (max-width: 1024px) {
   .Hero {
     height: 100%;
+    max-height: 100vh;
     flex-direction: column-reverse;
     margin: 20px 0;
   }
@@ -64,6 +67,9 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .image {
+    height: 1200px;
+  }
   .text-wrapper {
     padding: 0;
   }
